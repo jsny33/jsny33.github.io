@@ -1,0 +1,9 @@
+@media (min-width: 500px) {
+    body {
+        padding: 4px;
+    }
+}
+
+@media (max-width: 499px) {
+    
+}
