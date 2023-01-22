@@ -1,5 +1,34 @@
-@media (min-width: 600px) {
-  body {
-    padding: 4px;
+@media (min-width: 576px) {
+  .profile {
+    width: 25%;
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  #linkedIn {
+    width: 5%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 575px) {
+  .profile {
+    width: 50%;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  #linkedIn {
+    width: 10%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=style.css.map */
