@@ -19,6 +19,24 @@
 
 }
 
+table {
+
+    td {
+        padding-right:10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th {
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    padding:5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
 @media (max-width:575px) {
 
     .profile {

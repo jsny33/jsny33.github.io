@@ -15,6 +15,23 @@
     margin-right: auto;
   }
 }
+table {
+  padding: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table td {
+  padding-right: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+table th {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 @media (max-width: 575px) {
   .profile {
     width: 50%;
