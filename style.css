@@ -1,9 +1,5 @@
-@media (min-width: 500px) {
-    body {
-        padding: 4px;
-    }
-}
-
-@media (max-width: 499px) {
-    
-}
+@media (min-width: 600px) {
+  body {
+    padding: 4px;
+  }
+}/*# sourceMappingURL=style.css.map */
