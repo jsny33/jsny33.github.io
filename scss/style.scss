@@ -1,6 +1,9 @@
+$tableBorderCol: solid black;
+
 @media (min-width:576px) {
 
     .profile {
+        animation: fadeInMain 3s;
         width: 25%;
         display: block;
         margin-top: 15px;
@@ -10,11 +13,16 @@
     }
 
     #linkedIn {
-        width: 5%;
+        animation: fadeInLinkedIn 4s;
         display: block;
+        text-align: center;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #linkedIn img {
+        width: 7%;
     }
 
 }
@@ -23,23 +31,26 @@ table {
 
     td {
         padding-right:10px;
-        border: 1px solid black;
+        border: 1px $tableBorderCol;
         border-collapse: collapse;
         text-align: center;
     }
     th {
         text-align: center;
-        border: 1px solid black;
+        border: 1px $tableBorderCol;
         border-collapse: collapse;
     }
+    margin-left: auto;
+    margin-right: auto;
     padding:5px;
-    border: 1px solid black;
+    border: 1px $tableBorderCol;
     border-collapse: collapse;
   }
 
 @media (max-width:575px) {
 
     .profile {
+        animation: fadeInMain 3s;
         width: 50%;
         display: block;
         margin-top: 10px;
@@ -49,11 +60,27 @@ table {
     }
 
     #linkedIn {
-        width: 10%;
+        animation:  fadeInLinkedIn 4s;
         display: block;
         margin-top: 20px;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
 
+    #linkedIn img {
+        width: 15%
+    }
+
+}
+
+@keyframes fadeInMain {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeInLinkedIn {
+    0% { opacity: 0; }
+    12% { opacity: 0; }
+    100% { opacity: 1; }
 }
