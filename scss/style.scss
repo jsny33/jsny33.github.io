@@ -1,24 +1,41 @@
 $tableBorderCol: solid black;
 
+%picMargins-display {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+%profilePic {
+    animation: fadeInMain 3s;
+    position: relative;
+    @extend %picMargins-display;
+    border-radius: 50%;
+}
+
+%linkedInPic {
+    animation: fadeInLinkedIn 4s;
+    @extend %picMargins-display;
+    text-align: center;
+}
+
+.profile {
+    @extend %profilePic;
+}
+
+#linkedIn {
+    @extend %linkedInPic;
+}
+
 @media (min-width:576px) {
 
     .profile {
-        animation: fadeInMain 3s;
         width: 25%;
-        display: block;
         margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
     }
 
     #linkedIn {
-        animation: fadeInLinkedIn 4s;
-        display: block;
-        text-align: center;
         margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     #linkedIn img {
@@ -29,6 +46,8 @@ $tableBorderCol: solid black;
 
 table {
 
+    margin: 10px;
+
     td {
         padding-right:10px;
         border: 1px $tableBorderCol;
@@ -36,10 +55,12 @@ table {
         text-align: center;
     }
     th {
+        
         text-align: center;
         border: 1px $tableBorderCol;
         border-collapse: collapse;
     }
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
     padding:5px;
@@ -47,25 +68,22 @@ table {
     border-collapse: collapse;
   }
 
+.row{
+    border-color: solid black;
+}
+.col {
+    border-color: solid black;
+}
+
 @media (max-width:575px) {
 
     .profile {
-        animation: fadeInMain 3s;
         width: 50%;
-        display: block;
         margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
     }
 
     #linkedIn {
-        animation:  fadeInLinkedIn 4s;
-        display: block;
         margin-top: 20px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     #linkedIn img {
@@ -83,4 +101,12 @@ table {
     0% { opacity: 0; }
     12% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+#aboutParagraph {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75%;
 }
