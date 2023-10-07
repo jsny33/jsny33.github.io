@@ -2,7 +2,6 @@
 
 Name: Jacob Snyder
 Email: jus1554@psu.edu
-PSU ID: 985751922
 
 This website is a portfolio website, showcasing my prior coursework and projects I have completed. It has four pages, a home page, an about me page, a coursework page, and a project page. Navigation between these pages is handled by a mobile-responsive bootstrap navbar.
 
